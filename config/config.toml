@@ -1,10 +1,19 @@
 # Global LLM configuration
-[llm]
-model = "claude-3-7-sonnet-20250219"       # The LLM model to use
-base_url = "https://api.anthropic.com/v1/" # API endpoint URL
-api_key = "YOUR_API_KEY"                   # Your API key
-max_tokens = 8192                          # Maximum number of tokens in the response
-temperature = 0.0                          # Controls randomness
+[[llm]]
+name = "groq"
+model = "llama3-8b-8192"
+base_url = "https://api.groq.com/openai/v1 "
+api_key = "gsk_KEY HERE"
+max_tokens = 8192
+temperature = 0.0
+
+[[llm]]
+name = "groq-vision"
+model = "llava-v1.5-7b-448"
+base_url = "https://api.groq.com/openai/v1 "
+api_key = "gsk_KEY HERE"
+max_tokens = 4096
+temperature = 0.0
 
 # [llm] # Amazon Bedrock
 # api_type = "aws"                                       # Required
