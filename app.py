@@ -74,3 +74,4 @@ with st.expander("🔧 Run Python Code"):
         with st.spinner("Running code..."):
             output = run_code(code_prompt)
             st.code(output, language="bash")
+            
