@@ -1,6 +1,35 @@
-groq>=0.30.0
-streamlit>=1.46.0
-python-dotenv>=1.0.0
-toml>=0.10.2
-pillow>=11.0.0
-playwright>=1.51.0
+# Secrets
+.env
+.env.txt
+.env.local
+config/config.toml
+*.log
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+env/
+virtualenv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.temp
+*.sqlite3
+/export/

@@ -1,6 +1,7 @@
 # Secrets
 .env
 .env.txt
+.env.local
 config/config.toml
 *.log
 
@@ -12,12 +13,20 @@ __pycache__
 *.pyc
 
 # Virtual environments
+.venv
 venv/
+ENV/
 env/
-virtualenv/
+env.bak/
+venv.bak/
 
-# Streamlit secrets
-.streamlit/secrets.toml
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*.temp
 
 # OS generated
 .DS_Store
