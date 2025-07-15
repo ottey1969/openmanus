@@ -1,0 +1,20 @@
+[project]
+name = "openmanus"
+version = "0.1.0"
+description = "AI Research Assistant powered by Groq"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "groq",
+    "streamlit",
+    "python-dotenv",
+    "toml",
+    "pillow",
+    "playwright",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
