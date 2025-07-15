@@ -1,7 +1,6 @@
 # Secrets
 .env
 .env.txt
-.env.local
 config/config.toml
 *.log
 
@@ -13,21 +12,13 @@ __pycache__
 *.pyc
 
 # Virtual environments
-.venv
 venv/
-ENV/
 env/
-env.bak/
-venv.bak/
+virtualenv/
 
-# IDE / Editor
-.idea/
-.vscode/
-*.swp
-*.swo
-*.tmp
-*.temp
+# Streamlit secrets
+.streamlit/secrets.toml
 
 # OS generated
 .DS_Store
-Thumbs.db".env" 
+Thumbs.db
