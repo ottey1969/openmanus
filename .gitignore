@@ -1,182 +1,21 @@
-### Project-specific ###
-# Logs
-logs/
-*.log
+[project]
+name = "openmanus-pro"
+version = "0.1.0"
+description = "AI Research Assistant powered by Groq"
+requires-python = ">=3.9,<4.0"
 
-# Data
-data/
+dependencies = [
+    "groq",
+    "streamlit",
+    "python-dotenv",
+    "toml",
+    "pillow",
+    "playwright"
+]
 
-# Workspace
-workspace/
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-### Python ###
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-.pybuilder/
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-### Dependency management ###
-
-# pipenv
-# Include Pipfile.lock in version control for deterministic builds
-# Only ignore if you're developing a library where cross-platform compatibility is important
-#Pipfile.lock
-
-# UV
-# For binary packages, include uv.lock for reproducibility
-#uv.lock
-
-# poetry
-# Commit poetry.lock to ensure everyone uses the same dependency versions
-# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-poetry.lock
-
-# pdm
-# Commit pdm.lock for deterministic builds
-pdm.lock
-
-# PDM project config – do not commit
-.pdm.toml
-.pdm-python
-.pdm-build/
-
-# PEP 582 local packages
-__pypackages__/
-
-### Secrets & Sensitive Files ###
-.env
-.env.txt
-.env.local
-config/config.toml
-config/*.toml
-
-### Environments ###
-.venv
-venv/
-ENV/
-env/
-env.bak/
-venv.bak/
-
-### IDE / Editor ###
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-.history/
-*.vsix
-
-# JetBrains IDEs (PyCharm, etc.)
-.idea/
-
-# Spyder
-.spyderproject
-.spyproject
-
-# Rope
-.ropeproject
-
-### OS generated ###
-.DS_Store
-Thumbs.db
-
-### Node.js ###
-node_modules/
-npm-debug.log*
-yarn.lock
-package-lock.json
-
-### CI/CD ###
-.github/workflows/cache/
-
-### Misc ###
-*.swp
-*.swo
-*.tmp
-*.temp
-*.log
-*.sqlite3
-/export/
+[tool.poetry]
+package-mode = false
