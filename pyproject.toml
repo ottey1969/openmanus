@@ -1,7 +1,3 @@
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
 package-mode = false
 
@@ -12,3 +8,27 @@ python-dotenv = "^1.0.0"
 toml = "^0.10.2"
 pillow = "^11.0.0"
 playwright = "^1.51.0"
+[tool.pdm]
+distribution = false
+
+[project]
+name = "OpenManus"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "ottmar1969", email = "otteyfrancisca@gmail.com"},
+]
+dependencies = [
+    "groq==0.30.0",
+    "streamlit==1.46.1",
+    "python-dotenv==1.1.1",
+    "pillow==11.1.0",
+    "playwright==1.51.0",
+    "toml==0.10.2",
+    "aiofiles==24.1.0",
+    "loguru==0.7.3",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
