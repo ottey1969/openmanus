@@ -1,24 +1,9 @@
-# Secrets
 .env
 .env.txt
-config/config.toml
-*.log
-
-# Python cache
+.env.local
 __pycache__
 *.pyc
-*.pyo
-*.pyd
-*.pyc
-
-# Virtual environments
 venv/
-env/
-virtualenv/
-
-# Streamlit secrets
-.streamlit/secrets.toml
-
-# OS generated
-.DS_Store
-Thumbs.db
+logs/
+*.log
+*.sqlite3
