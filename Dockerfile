@@ -10,4 +10,5 @@ COPY . .
 
 RUN uv pip install --system -r requirements.txt
 
-CMD ["bash"]
+ENTRYPOINT ["sh", "-c", "cd openmanus && streamlit run app.py --server.address 0.0.0.0 --server.port 8000"]
+
